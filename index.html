@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tabla Periodica</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Creamos las relaciones con los archivos de estilo y script-->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <!--Todos aquellos con definiciones loader son clasese que pertenecen a una animacion de preloader -->
+  <div class="contenedor_loader">
+  <div class="loader"></div>
+  </div>
+  <body> 
+  <!--Creamos la interaccion y boton del menu hamburguesa-->
+    <input type="checkbox" name="" id="hamburguesa" />
+    <div class="barra-lateral">
+      <div class="lateral-titulo">
+      <h2><span class="las la-atom"></span>Tabla Periodica</h2>
+      </div>
+      <!--Dentro del menu hamburguesa especificamos las opcines de la barra lateral-->
+      <div class="menu-lateral">
+        <ul>
+          <li>
+            <a href="index.html"><span class="las la-laptop"></span><span>Computacion</span></a>
+          </li>
+          <li>
+            <a href="index.html"><span class="las la-superscript"></span><span>Fisica</span></a>
+          </li>
+          <li>
+            <a href="index.html"><span class="las la-calculator"></span><span>Matematicas</span></a>
+          </li>
+          <li>
+            <a href="index.html"><span class="las la-award"></span><span>Ingenieria</span></a>
+          </li>
+          <li>
+            <a href="index.html"><span class="las la-flask"></span><span>Quimica</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--A partir de este div la clase main contiene todo el estilo de las tarjetas que contienen la informacion-->
+    <div class="main">
+      <header>
+        <h2>
+          <label for="hamburguesa">
+            <span class="las la-bars"></span>
+          </label>Tabla Periodica
+        </h2>
+        <div class="seccion-usuario">
+          <img src="ElementosGraficos/Esc.png" width="50px" height="50px" alt="" content-aling=center/>
+          <div>
+            <h4>Bienvenido</h4>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!--Empezamos a crear la celdas de cada elemento-->
+        <div class="tarjetas-elemento">
+          <div class="periodic">
+            <div class="periodic-row">
+              <div class="cell" id="Elemento1" onclick = "generalData(1)">
+                <div class="element" class="type-4">
+                  <div class="masa" id="Masa1" ></div>
+                  <div class="at_num" id="1"></div>
+                  <div class="estad" id="Bandera1">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na1"></div>
+                  <div class="at_details" id="NombreC1">
+                  <br /><sup id="Profesion1"></sup>
+                  </div>
+                </div>
+              </div>
+              <!--La clase cell empty define aquellas celdas entre categorias que no se ocupan
+              todo esto para hacerlos resizable-->
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <!--El metodo generalData() envia un identificador igual al numeroAtomico
+              que despues sirve en JS para obtener sus datos -->
+              <div class="cell" onclick = "generalData(2)" id="Elemento2">
+                <div class="element" class="type-2 cat-3">
+                  <div class="masa" id="Masa2"></div>
+                  <div class="at_num" id="2"></div>
+                  <div class="estad" id="Bandera2">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na2"></div>
+                  <div class="at_details" id="NombreC2">
+                  <br /><sup id="Profesion2"></sup>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="periodic-row">
+              <div class="cell" onclick = "generalData(3)" id="Elemento3">
+                <div class="element" class="type-2 cat-3">
+                  <div class="masa" id="Masa3"></div>
+                  <div class="at_num" id="3"></div>
+                  <div class="estad" id="Bandera3">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na3"></div>
+                  <div class="at_details" id="NombreC3">
+                    <br /><sup id="Profesion3"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(4)" id="Elemento4">
+                <div class="element" class="type-5 cat-2">
+                  <div class="masa" id="Masa4"></div>
+                  <div class="at_num" id="4"></div>
+                  <div class="estad" id="Bandera4">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na4"></div>
+                  <div class="at_details" id="NombreC4">
+                  <br /><sup id="Profesion4"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell"onclick = "generalData(5)" id="Elemento5">
+                <div class="element">
+                  <div class="masa" id="Masa5"></div>
+                  <div class="at_num" id="5"></div>
+                  <div class="estad" id="Bandera5">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na5"></div>
+                  <div class="at_details" id="NombreC5">
+                  <br /><sup id="Profesion5"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(6)" id="Elemento6">
+                <div class="element">
+                  <div class="masa" id="Masa6"></div>
+                  <div class="at_num" id="6"></div>
+                  <div class="estad" id="Bandera6">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na6"></div>
+                  <div class="at_details" id="NombreC6">
+                  <br /><sup id="Profesion6"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(7)" id="Elemento7">
+                <div class="element">
+                  <div class="masa" id="Masa7"></div>
+                  <div class="at_num" id="7"></div>
+                  <div class="estad" id="Bandera7">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na7"></div>
+                  <div class="at_details" id="NombreC7">
+                  <br /><sup id="Profesion7"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(8)" id="Elemento8">
+                <div class="element">
+                  <div class="masa" id="Masa8"></div>
+                  <div class="at_num" id="8"></div>
+                  <div class="estad" id="Bandera8">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na8"></div>
+                  <div class="at_details" id="NombreC8">
+                  <br /><sup id="Profesion8"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell"onclick = "generalData(9)" id="Elemento9">
+                <div class="element">
+                  <div class="masa" id="Masa9"></div>
+                  <div class="at_num" id="9"></div>
+                  <div class="estad" id="Bandera9">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na9"></div>
+                  <div class="at_details" id="NombreC9">
+                  <br /><sup id="Profesion9"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell"onclick = "generalData(10)" id="Elemento10">
+                <div class="element">
+                  <div class="masa" id="Masa10"></div>
+                  <div class="at_num" id="10"></div>
+                  <div class="estad" id="Bandera10">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na10"></div>
+                  <div class="at_details" id="NombreC10">
+                  <br /><sup id="Profesion10"></sup>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="periodic-row">
+              <div class="cell"onclick = "generalData(11)" id="Elemento11">
+                <div class="element">
+                  <div class="masa" id="Masa11"></div>
+                  <div class="at_num" id="11"></div>
+                  <div class="estad" id="Bandera11">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na11"></div>
+                  <div class="at_details" id="NombreC11">
+                  <br /><sup id="Profesion11"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(12)" id="Elemento12">
+                <div class="element">
+                  <div class="masa" id="Masa12"></div>
+                  <div class="at_num" id="12"></div>
+                  <div class="estad" id="Bandera12">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na12"></div>
+                  <div class="at_details" id="NombreC12">
+                  <br /><sup id="Profesion12"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell" onclick = "generalData(13)" id="Elemento13">
+                <div class="element">
+                  <div class="masa" id="Masa13"></div>
+                  <div class="at_num" id="13"></div>
+                  <div class="estad" id="Bandera13">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na13"></div>
+                  <div class="at_details" id="NombreC13">
+                    <br /><sup id="Profesion13"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(14)" id="Elemento14">
+                <div class="element">
+                  <div class="masa" id="Masa14"></div>
+                  <div class="at_num" id="14"></div>
+                  <div class="estad" id="Bandera14">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na14"></div>
+                  <div class="at_details" id="NombreC14">
+                    <br /><sup id="Profesion14"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(15)" id="Elemento15">
+                <div class="element">
+                  <div class="masa" id="Masa15"></div>
+                  <div class="at_num" id="15"></div>
+                  <div class="estad" id="Bandera15">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na15"></div>
+                  <div class="at_details" id="NombreC15">
+                    <br /><sup id="Profesion15"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(16)" id="Elemento16">
+                <div class="element">
+                  <div class="masa" id="Masa16"></div>
+                  <div class="at_num" id="16"></div>
+                  <div class="estad" id="Bandera16">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na16"></div>
+                  <div class="at_details" id="NombreC16">
+                    <br /><sup id="Profesion16"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(17)" id="Elemento17">
+                <div class="element">
+                 <div class="masa" id="Masa17"></div>
+                  <div class="at_num" id="17"></div>
+                  <div class="estad" id="Bandera17">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na17"></div>
+                  <div class="at_details" id="NombreC17">
+                    <br /><sup id="Profesion17"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(18)" id="Elemento18">
+                <div class="element">
+                  <div class="masa" id="Masa18"></div>
+                  <div class="at_num" id="18"></div>
+                  <div class="estad" id="Bandera18">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na18"></div>
+                  <div class="at_details" id="NombreC18">
+                    <br /><sup id="Profesion18"></sup>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="periodic-row">
+              <div class="cell" onclick = "generalData(19)" id="Elemento19">
+                <div class="element">
+                  <div class="masa" id="Masa19"></div>
+                  <div class="at_num" id="19"></div>
+                  <div class="estad" id="Bandera19">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na19"></div>
+                  <div class="at_details" id="NombreC19">
+                    <br /><sup id="Profesion19"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(20)" id="Elemento20">
+                <div class="element">
+                  <div class="masa" id="Masa20"></div>
+                  <div class="at_num" id="20"></div>
+                  <div class="estad" id="Bandera20">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na20"></div>
+                  <div class="at_details" id="NombreC20">
+                    <br /><sup id="Profesion20"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(21)" id="Elemento21">
+                <div class="element">
+                  <div class="masa" id="Masa21"></div>
+                  <div class="at_num" id="21"></div>
+                  <div class="estad" id="Bandera21">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na21"></div>
+                  <div class="at_details" id="NombreC21">
+                    <br /><sup id="Profesion21"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(22)" id="Elemento22">
+                <div class="element">
+                  <div class="masa" id="Masa22"></div>
+                  <div class="at_num" id="22"></div>
+                  <div class="estad" id="Bandera22">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na22"></div>
+                  <div class="at_details" id="NombreC22">
+                    <br /><sup id="Profesion22"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(23)" id="Elemento23">
+                <div class="element">
+                  <div class="masa" id="Masa23"></div>
+                  <div class="at_num" id="23"></div>
+                  <div class="estad" id="Bandera23">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na23"></div>
+                  <div class="at_details" id="NombreC23">
+                    <br /><sup id="Profesion23"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell"  onclick = "generalData(24)" id="Elemento24">
+                <div class="element">
+                  <div class="masa" id="Masa24"></div>
+                  <div class="at_num" id="24"></div>
+                  <div class="estad" id="Bandera24">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na24"></div>
+                  <div class="at_details" id="NombreC24">
+                    <br /><sup id="Profesion24"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(25)" id="Elemento25">
+                <div class="element">
+                  <div class="masa" id="Masa25"></div>
+                  <div class="at_num" id="25"></div>
+                  <div class="estad" id="Bandera25">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na25"></div>
+                  <div class="at_details" id="NombreC25">
+                    <br /><sup id="Profesion25"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(26)" id="Elemento26">
+                <div class="element">
+                  <div class="masa" id="Masa26"></div>
+                  <div class="at_num" id="26"></div>
+                  <div class="estad" id="Bandera26">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na26"></div>
+                  <div class="at_details" id="NombreC26">
+                    <br /><sup id="Profesion26"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell"  onclick = "generalData(27)"id="Elemento27">
+                <div class="element">
+                  <div class="masa" id="Masa27"></div>
+                  <div class="at_num" id="27"></div>
+                  <div class="estad" id="Bandera27">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na27"></div>
+                  <div class="at_details" id="NombreC27">
+                    <br /><sup id="Profesion27"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(28)" id="Elemento28">
+                <div class="element">
+                  <div class="masa" id="Masa28"></div>
+                  <div class="at_num" id="28"></div>
+                  <div class="estad" id="Bandera28">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na28"></div>
+                  <div class="at_details" id="NombreC28">
+                    <br /><sup id="Profesion28"></sup>
+                  </div>
+                </div>
+              </div> 
+              <div class="cell" onclick = "generalData(29)" id="Elemento29">
+                <div class="element">
+                  <div class="masa" id="Masa29"></div>
+                  <div class="at_num" id="29"></div>
+                  <div class="estad" id="Bandera29">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na29"></div>
+                  <div class="at_details" id="NombreC29">
+                    <br /><sup id="Profesion29"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(30)" id="Elemento30">
+                <div class="element">
+                  <div class="masa" id="Masa30"></div>
+                  <div class="at_num" id="30"></div>
+                  <div class="estad" id="Bandera30">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na30"></div>
+                  <div class="at_details" id="NombreC30">
+                    <br /><sup id="Profesion30"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(31)" id="Elemento31">
+                <div class="element">
+                  <div class="masa" id="Masa31"></div>
+                  <div class="at_num" id="31"></div>
+                  <div class="estad" id="Bandera31">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na31"></div>
+                  <div class="at_details" id="NombreC31">
+                    <br /><sup id="Profesion31"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(32)" id="Elemento32">
+                <div class="element">
+                 <div class="masa" id="Masa32"></div>
+                  <div class="at_num" id="32"></div>
+                  <div class="estad" id="Bandera32">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na32"></div>
+                  <div class="at_details" id="NombreC32">
+                    <br /><sup id="Profesion32"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(33)" id="Elemento33">
+                <div class="element">
+                  <div class="masa" id="Masa33"></div>
+                  <div class="at_num" id="33"></div>
+                  <div class="estad" id="Bandera33">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na33"></div>
+                  <div class="at_details" id="NombreC33">
+                    <br /><sup id="Profesion33"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(34)" id="Elemento34">
+                <div class="element">
+                  <div class="masa" id="Masa34"></div>
+                  <div class="at_num" id="34"></div>
+                  <div class="estad" id="Bandera34">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na34"></div>
+                  <div class="at_details" id="NombreC34">
+                    <br /><sup id="Profesion34"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(35)" id="Elemento35">
+                <div class="element">
+                  <div class="masa" id="Masa35"></div>
+                  <div class="at_num" id="35"></div>
+                  <div class="estad" id="Bandera35">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na35"></div>
+                  <div class="at_details" id="NombreC35">
+                    <br /><sup id="Profesion35"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(36)" id="Elemento36">
+                <div class="element">
+                  <div class="masa" id="Masa36"></div>
+                  <div class="at_num" id="36"></div>
+                  <div class="estad" id="Bandera36">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na36"></div>
+                  <div class="at_details" id="NombreC36">
+                    <br /><sup id="Profesion36"></sup>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="periodic-row">
+              <div class="cell" onclick = "generalData(37)" id="Elemento37">
+                <div class="element">
+                  <div class="masa" id="Masa37"></div>
+                  <div class="at_num" id="37"></div>
+                  <div class="estad" id="Bandera37">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na37"></div>
+                  <div class="at_details" id="NombreC37">
+                    <br /><sup id="Profesion37"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(38)" id="Elemento38">
+                <div class="element">
+                  <div class="masa" id="Masa38"></div>
+                  <div class="at_num" id="38"></div>
+                  <div class="estad" id="Bandera38">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na38"></div>
+                  <div class="at_details" id="NombreC38">
+                    <br /><sup id="Profesion38"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(39)" id="Elemento39">
+                <div class="element">
+                  <div class="masa" id="Masa39"></div>
+                  <div class="at_num" id="39"></div>
+                  <div class="estad" id="Bandera39">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na39"></div>
+                  <div class="at_details" id="NombreC39">
+                    <br /><sup id="Profesion39"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(40)" id="Elemento40">
+                <div class="element">
+                  <div class="masa" id="Masa40"></div>
+                  <div class="at_num" id="40"></div>
+                  <div class="estad" id="Bandera40">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na40"></div>
+                  <div class="at_details" id="NombreC40">
+                    <br /><sup id="Profesion40"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(41)" id="Elemento41">
+                <div class="element">
+                  <div class="masa" id="Masa41"></div>
+                  <div class="at_num" id="41"></div>
+                  <div class="estad" id="Bandera41">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na41"></div>
+                  <div class="at_details" id="NombreC41">
+                    <br /><sup id="Profesion41"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(42)" id="Elemento42">
+                <div class="element">
+                 <div class="masa" id="Masa42"></div>
+                  <div class="at_num" id="42"></div>
+                  <div class="estad" id="Bandera42">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na42"></div>
+                  <div class="at_details" id="NombreC42">
+                    <br /><sup id="Profesion42"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(43)" id="Elemento43">
+                <div class="element">
+                  <div class="masa" id="Masa43"></div>
+                  <div class="at_num" id="43"></div>
+                  <div class="estad" id="Bandera43">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na43"></div>
+                  <div class="at_details" id="NombreC43">
+                    <br /><sup id="Profesion43"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(44)" id="Elemento44">
+                <div class="element">
+                  <div class="masa" id="Masa44"></div>
+                  <div class="at_num" id="44"></div>
+                  <div class="estad" id="Bandera44">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na44"></div>
+                  <div class="at_details" id="NombreC44">
+                    <br /><sup id="Profesion44"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(45)" id="Elemento45">
+                <div class="element">
+                  <div class="masa" id="Masa45"></div>
+                  <div class="at_num" id="45"></div>
+                  <div class="estad" id="Bandera45">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na45"></div>
+                  <div class="at_details" id="NombreC45">
+                    <br /><sup id="Profesion45"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(46)" id="Elemento46">
+                <div class="element">
+                  <div class="masa" id="Masa46"></div>
+                  <div class="at_num" id="46"></div>
+                  <div class="estad" id="Bandera46">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na46"></div>
+                  <div class="at_details" id="NombreC46">
+                    <br /><sup id="Profesion46"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(47)" id="Elemento47">
+                <div class="element">
+                  <div class="masa" id="Masa47"></div>
+                  <div class="at_num" id="47"></div>
+                  <div class="estad" id="Bandera47">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na47"></div>
+                  <div class="at_details" id="NombreC47">
+                    <br /><sup id="Profesion47"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(48)" id="Elemento48">
+                <div class="element">
+                 <div class="masa" id="Masa48"></div>
+                  <div class="at_num" id="48"></div>
+                  <div class="estad" id="Bandera48">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na48"></div>
+                  <div class="at_details" id="NombreC48">
+                    <br /><sup id="Profesion48"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(49)" id="Elemento49">
+                <div class="element">
+                  <div class="masa" id="Masa49"></div>
+                  <div class="at_num" id="49"></div>
+                  <div class="estad" id="Bandera49">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na49"></div>
+                  <div class="at_details" id="NombreC49">
+                    <br /><sup id="Profesion49"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(50)" id="Elemento50">
+                <div class="element">
+                  <div class="masa" id="Masa50"></div>
+                  <div class="at_num" id="50"></div>
+                  <div class="estad" id="Bandera50">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na50"></div>
+                  <div class="at_details" id="NombreC50">
+                    <br /><sup id="Profesion50"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(51)" id="Elemento51">
+                <div class="element">
+                 <div class="masa" id="Masa51"></div>
+                  <div class="at_num" id="51"></div>
+                  <div class="estad" id="Bandera51">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na51"></div>
+                  <div class="at_details" id="NombreC51">
+                    <br /><sup id="Profesion51"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(52)" id="Elemento52">
+                <div class="element">
+                  <div class="masa" id="Masa52"></div>
+                  <div class="at_num" id="52"></div>
+                  <div class="estad" id="Bandera52">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na52"></div>
+                  <div class="at_details" id="NombreC52">
+                    <br /><sup id="Profesion52"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(53)" id="Elemento53">
+                <div class="element">
+                 <div class="masa" id="Masa53"></div>
+                  <div class="at_num" id="53"></div>
+                  <div class="estad" id="Bandera53">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na53"></div>
+                  <div class="at_details" id="NombreC53">
+                    <br /><sup id="Profesion53"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(54)" id="Elemento54">
+                <div class="element">
+                 <div class="masa" id="Masa54"></div>
+                  <div class="at_num" id="54"></div>
+                  <div class="estad" id="Bandera54">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na54"></div>
+                  <div class="at_details" id="NombreC54">
+                    <br /><sup id="Profesion54"></sup>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="periodic-row">
+              <div class="cell" onclick = "generalData(55)" id="Elemento55">
+                <div class="element">
+                 <div class="masa" id="Masa55"></div>
+                  <div class="at_num" id="55"></div>
+                  <div class="estad" id="Bandera55">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na55"></div>
+                  <div class="at_details" id="NombreC55">
+                    <br /><sup id="Profesion55"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(56)" id="Elemento56">
+                <div class="element">
+                  <div class="masa" id="Masa56"></div>
+                  <div class="at_num" id="56"></div>
+                  <div class="estad" id="Bandera56">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na56"></div>
+                  <div class="at_details" id="NombreC56">
+                    <br /><sup id="Profesion56"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(57)" id="Elemento57">
+                <div class="element">
+                  <div class="masa" id="Masa57"></div>
+                  <div class="at_num" id="57"></div>
+                  <div class="estad" id="Bandera57">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na57"></div>
+                  <div class="at_details" id="NombreC57">
+                    <br /><sup id="Profesion57"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(58)" id="Elemento58">
+                <div class="element">
+                  <div class="masa" id="Masa58"></div>
+                  <div class="at_num" id="58"></div>
+                  <div class="estad" id="Bandera58">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na58"></div>
+                  <div class="at_details" id="NombreC58">
+                    <br /><sup id="Profesion58"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(59)" id="Elemento59">
+                <div class="element">
+                  <div class="masa" id="Masa59"></div>
+                  <div class="at_num" id="59"></div>
+                  <div class="estad" id="Bandera59">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na59"></div>
+                  <div class="at_details" id="NombreC59">
+                    <br /><sup id="Profesion59"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(60)" id="Elemento60">
+                <div class="element">
+                  <div class="masa" id="Masa60"></div>
+                  <div class="at_num" id="60"></div>
+                  <div class="estad" id="Bandera60">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na60"></div>
+                  <div class="at_details" id="NombreC60">
+                    <br /><sup id="Profesion60"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(61)" id="Elemento61">
+                <div class="element">
+                  <div class="masa" id="Masa61"></div>
+                  <div class="at_num" id="61"></div>
+                  <div class="estad" id="Bandera61">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na61"></div>
+                  <div class="at_details" id="NombreC61">
+                    <br /><sup id="Profesion61"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(62)" id="Elemento62">
+                <div class="element">
+                  <div class="masa" id="Masa62"></div>
+                  <div class="at_num" id="62"></div>
+                  <div class="estad" id="Bandera62">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na62"></div>
+                  <div class="at_details" id="NombreC62">
+                    <br /><sup id="Profesion62"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(63)" id="Elemento63">
+                <div class="element">
+                  <div class="masa" id="Masa63"></div>
+                  <div class="at_num" id="63"></div>
+                  <div class="estad" id="Bandera63">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na63"></div>
+                  <div class="at_details" id="NombreC63">
+                    <br /><sup id="Profesion63"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(64)" id="Elemento64">
+                <div class="element">
+                <div class="masa" id="Masa64"></div>
+                  <div class="at_num" id="64"></div>
+                  <div class="estad" id="Bandera64">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na64"></div>
+                  <div class="at_details" id="NombreC64">
+                    <br /><sup id="Profesion64"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(65)" id="Elemento65">
+                <div class="element">
+                  <div class="masa" id="Masa65"></div>
+                  <div class="at_num" id="65"></div>
+                  <div class="estad" id="Bandera65">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na65"></div>
+                  <div class="at_details" id="NombreC65">
+                    <br /><sup id="Profesion65"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(66)" id="Elemento66">
+                <div class="element">
+                 <div class="masa" id="Masa66"></div>
+                  <div class="at_num" id="66"></div>
+                  <div class="estad" id="Bandera66">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na66"></div>
+                  <div class="at_details" id="NombreC66">
+                    <br /><sup id="Profesion66"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(67)" id="Elemento67">
+                <div class="element">
+                 <div class="masa" id="Masa67"></div>
+                  <div class="at_num" id="67"></div>
+                  <div class="estad" id="Bandera67">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na67"></div>
+                  <div class="at_details" id="NombreC67">
+                    <br /><sup id="Profesion67"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(68)" id="Elemento68">
+                <div class="element">
+                 <div class="masa" id="Masa68"></div>
+                  <div class="at_num" id="68"></div>
+                  <div class="estad" id="Bandera68">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na68"></div>
+                  <div class="at_details" id="NombreC68">
+                    <br /><sup id="Profesion68"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(69)" id="Elemento69">
+                <div class="element">
+                  <div class="masa" id="Masa69"></div>
+                  <div class="at_num" id="69"></div>
+                  <div class="estad" id="Bandera69">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na69"></div>
+                  <div class="at_details" id="NombreC69">
+                    <br /><sup id="Profesion69"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(70)" id="Elemento70">
+                <div class="element">
+                  <div class="masa" id="Masa70"></div>
+                  <div class="at_num" id="70"></div>
+                  <div class="estad" id="Bandera70">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na70"></div>
+                  <div class="at_details" id="NombreC70">
+                    <br /><sup id="Profesion70"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(71)" id="Elemento71">
+                <div class="element">
+                  <div class="masa" id="Masa71"></div>
+                  <div class="at_num" id="71"></div>
+                  <div class="estad" id="Bandera71">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na71"></div>
+                  <div class="at_details" id="NombreC71">
+                    <br /><sup id="Profesion71"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(72)" id="Elemento72">
+                <div class="element">
+                  <div class="masa" id="Masa72"></div>
+                  <div class="at_num" id="72"></div>
+                  <div class="estad" id="Bandera72">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na72"></div>
+                  <div class="at_details" id="NombreC72">
+                    <br /><sup id="Profesion72"></sup>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="periodic-row">
+              <div class="cell" onclick = "generalData(73)" id="Elemento73">
+                <div class="element">
+                  <div class="masa" id="Masa73"></div>
+                  <div class="at_num" id="73"></div>
+                  <div class="estad" id="Bandera73">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na73"></div>
+                  <div class="at_details" id="NombreC73">
+                    <br /><sup id="Profesion73"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(74)" id="Elemento74">
+                <div class="element">
+                  <div class="masa" id="Masa74"></div>
+                  <div class="at_num" id="74"></div>
+                  <div class="estad" id="Bandera74">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na74"></div>
+                  <div class="at_details" id="NombreC74">
+                    <br /><sup id="Profesion74"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(75)" id="Elemento75">
+                <div class="element">
+                  <div class="masa" id="Masa75"></div>
+                  <div class="at_num" id="75"></div>
+                  <div class="estad" id="Bandera75">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na75"></div>
+                  <div class="at_details" id="NombreC75">
+                    <br /><sup id="Profesion75"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(76)" id="Elemento76">
+                <div class="element">
+                  <div class="masa" id="Masa76"></div>
+                  <div class="at_num" id="76"></div>
+                  <div class="estad" id="Bandera76">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na76"></div>
+                  <div class="at_details" id="NombreC76">
+                    <br /><sup id="Profesion76"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(77)" id="Elemento77">
+                <div class="element">
+                  <div class="masa" id="Masa77"></div>
+                  <div class="at_num" id="77"></div>
+                  <div class="estad" id="Bandera77">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na77"></div>
+                  <div class="at_details" id="NombreC77">
+                    <br /><sup id="Profesion77"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(78)" id="Elemento78">
+                <div class="element">
+                  <div class="masa" id="Masa78"></div>
+                  <div class="at_num" id="78"></div>
+                  <div class="estad" id="Bandera78">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na78"></div>
+                  <div class="at_details" id="NombreC78">
+                    <br /><sup id="Profesion78"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(79)" id="Elemento79">
+                <div class="element">
+                  <div class="masa" id="Masa79"></div>
+                  <div class="at_num" id="79"></div>
+                  <div class="estad" id="Bandera79">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na79"></div>
+                  <div class="at_details" id="NombreC79">
+                    <br /><sup id="Profesion79"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(80)" id="Elemento80">
+                <div class="element">
+                  <div class="masa" id="Masa80"></div>
+                  <div class="at_num" id="80"></div>
+                  <div class="estad" id="Bandera80">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na80"></div>
+                  <div class="at_details" id="NombreC80">
+                    <br /><sup id="Profesion80"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(81)" id="Elemento81">
+                <div class="element">
+                  <div class="masa" id="Masa81"></div>
+                  <div class="at_num" id="81"></div>
+                  <div class="estad" id="Bandera81">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na81"></div>
+                  <div class="at_details" id="NombreC81">
+                    <br /><sup id="Profesion81"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(82)" id="Elemento82">
+                <div class="element">
+                  <div class="masa" id="Masa82"></div>
+                  <div class="at_num" id="82"></div>
+                  <div class="estad" id="Bandera82">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na82"></div>
+                  <div class="at_details" id="NombreC82">
+                    <br /><sup id="Profesion82"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(83)" id="Elemento83">
+                <div class="element">
+                  <div class="masa" id="Masa83"></div>
+                  <div class="at_num" id="83"></div>
+                  <div class="estad" id="Bandera83">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na83"></div>
+                  <div class="at_details" id="NombreC83">
+                    <br /><sup id="Profesion83"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(84)" id="Elemento84">
+                <div class="element">
+                  <div class="masa" id="Masa84"></div>
+                  <div class="at_num" id="84"></div>
+                  <div class="estad" id="Bandera84">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na84"></div>
+                  <div class="at_details" id="NombreC84">
+                    <br /><sup id="Profesion84"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell"onclick = "generalData(85)" id="Elemento85">
+                <div class="element">
+                  <div class="masa" id="Masa85"></div>
+                  <div class="at_num" id="85"></div>
+                  <div class="estad" id="Bandera85">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na85"></div>
+                  <div class="at_details" id="NombreC85">
+                    <br /><sup id="Profesion85"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(86)" id="Elemento86">
+                <div class="element">
+                  <div class="masa" id="Masa86"></div>
+                  <div class="at_num" id="86"></div>
+                  <div class="estad" id="Bandera86">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na86"></div>
+                  <div class="at_details" id="NombreC86">
+                    <br /><sup id="Profesion86"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell"onclick = "generalData(87)" id="Elemento87">
+                <div class="element">
+                  <div class="masa" id="Masa87"></div>
+                  <div class="at_num" id="87"></div>
+                  <div class="estad" id="Bandera87">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na87"></div>
+                  <div class="at_details" id="NombreC87">
+                    <br /><sup id="Profesion87"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell"  onclick = "generalData(88)"id="Elemento88">
+                <div class="element">
+                 <div class="masa" id="Masa88"></div>
+                  <div class="at_num" id="88"></div>
+                  <div class="estad" id="Bandera88">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na88"></div>
+                  <div class="at_details" id="NombreC88">
+                    <br /><sup id="Profesion88"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(89)" id="Elemento89">
+                <div class="element">
+                  <div class="masa" id="Masa89"></div>
+                  <div class="at_num" id="89"></div>
+                  <div class="estad" id="Bandera89">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na89"></div>
+                  <div class="at_details" id="NombreC89">
+                    <br /><sup id="Profesion89"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(90)" id="Elemento90">
+                <div class="element">
+                  <div class="masa" id="Masa90"></div>
+                  <div class="at_num" id="90"></div>
+                  <div class="estad" id="Bandera90">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na90"></div>
+                  <div class="at_details" id="NombreC90">
+                    <br /><sup id="Profesion90"></sup>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="periodic-row"></div>
+            <div class="periodic-row">
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell" onclick = "generalData(91)" id="Elemento91">
+                <div class="element">
+                  <div class="masa" id="Masa91"></div>
+                  <div class="at_num" id="91"></div>
+                  <div class="estad" id="Bandera91">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na91"></div>
+                  <div class="at_details" id="NombreC91">
+                    <br /><sup id="Profesion91"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(92)" id="Elemento92">
+                <div class="element">
+                  <div class="masa" id="Masa92"></div>
+                  <div class="at_num" id="92"></div>
+                  <div class="estad" id="Bandera92">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na92"></div>
+                  <div class="at_details" id="NombreC92">
+                    <br /><sup id="Profesion92"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(93)" id="Elemento93">
+                <div class="element">
+                  <div class="masa" id="Masa93"></div>
+                  <div class="at_num" id="93"></div>
+                  <div class="estad" id="Bandera93">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na93"></div>
+                  <div class="at_details" id="NombreC93">
+                    <br /><sup id="Profesion93"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(94)" id="Elemento94">
+                <div class="element">
+                  <div class="masa" id="Masa94"></div>
+                  <div class="at_num" id="94"></div>
+                  <div class="estad" id="Bandera94">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na94"></div>
+                  <div class="at_details" id="NombreC94">
+                    <br /><sup id="Profesion94"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(95)" id="Elemento95">
+                <div class="element">
+                 <div class="masa" id="Masa95"></div>
+                  <div class="at_num" id="95"></div>
+                  <div class="estad" id="Bandera95">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na95"></div>
+                  <div class="at_details" id="NombreC95">
+                    <br /><sup id="Profesion95"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(96)" id="Elemento96">
+                <div class="element">
+                  <div class="masa" id="Masa96"></div>
+                  <div class="at_num" id="96"></div>
+                  <div class="estad" id="Bandera96">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na96"></div>
+                  <div class="at_details" id="NombreC96">
+                    <br /><sup id="Profesion96"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(97)" id="Elemento97">
+                <div class="element">
+                  <div class="masa" id="Masa97"></div>
+                  <div class="at_num" id="97"></div>
+                  <div class="estad" id="Bandera97">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na97"></div>
+                  <div class="at_details" id="NombreC97">
+                    <br /><sup id="Profesion97"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(98)" id="Elemento98">
+                <div class="element">
+                 <div class="masa" id="Masa98"></div>
+                  <div class="at_num" id="98"></div>
+                  <div class="estad" id="Bandera98">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na98"></div>
+                  <div class="at_details" id="NombreC98">
+                    <br /><sup id="Profesion98"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(99)" id="Elemento99">
+                <div class="element">
+                 <div class="masa" id="Masa99"></div>
+                  <div class="at_num" id="99"></div>
+                  <div class="estad" id="Bandera99">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na99"></div>
+                  <div class="at_details" id="NombreC99">
+                    <br /><sup id="Profesion99"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(100)" id="Elemento100">
+                <div class="element">
+                  <div class="masa" id="Masa100"></div>
+                  <div class="at_num" id="100"></div>
+                  <div class="estad" id="Bandera100">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na100"></div>
+                  <div class="at_details" id="NombreC100">
+                    <br /><sup id="Profesion100"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(101)" id="Elemento101">
+                <div class="element">
+                  <div class="masa" id="Masa101"></div>
+                  <div class="at_num" id="101"></div>
+                  <div class="estad" id="Bandera101">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na101"></div>
+                  <div class="at_details" id="NombreC101">
+                    <br /><sup id="Profesion101"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(102)" id="Elemento102">
+                <div class="element">
+                  <div class="masa" id="Masa102"></div>
+                  <div class="at_num" id="102"></div>
+                  <div class="estad" id="Bandera102">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na102"></div>
+                  <div class="at_details" id="NombreC102">
+                    <br /><sup id="Profesion102"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(103)" id="Elemento103">
+                <div class="element">
+                 <div class="masa" id="Masa103"></div>
+                  <div class="at_num" id="103"></div>
+                  <div class="estad" id="Bandera103">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na103"></div>
+                  <div class="at_details" id="NombreC103">
+                    <br /><sup id="Profesion103"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(104)" id="Elemento104">
+                <div class="element">
+                  <div class="masa" id="Masa104"></div>
+                  <div class="at_num" id="104"></div>
+                  <div class="estad" id="Bandera104">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na104"></div>
+                  <div class="at_details" id="NombreC104">
+                    <br /><sup id="Profesion104"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell empty"></div>
+            </div>
+            <div class="periodic-row">
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell empty"></div>
+              <div class="cell"  onclick = "generalData(105)"id="Elemento105">
+                <div class="element">
+                 <div class="masa" id="Masa105"></div>
+                  <div class="at_num" id="105"></div>
+                  <div class="estad" id="Bandera105">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na105"></div>
+                  <div class="at_details" id="NombreC105">
+                    <br /><sup id="Profesion105"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell"  onclick = "generalData(106)"id="Elemento106">
+                <div class="element">
+                 <div class="masa" id="Masa106"></div>
+                  <div class="at_num" id="106"></div>
+                  <div class="estad" id="Bandera106">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na106"></div>
+                  <div class="at_details" id="NombreC106">
+                    <br /><sup id="Profesion106"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(107)" id="Elemento107">
+                <div class="element">
+                  <div class="masa" id="Masa107"></div>
+                  <div class="at_num" id="107"></div>
+                  <div class="estad" id="Bandera107">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na107"></div>
+                  <div class="at_details" id="NombreC107">
+                    <br /><sup id="Profesion107"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(108)" id="Elemento108">
+                <div class="element">
+                  <div class="masa" id="Masa108"></div>
+                  <div class="at_num" id="108"></div>
+                  <div class="estad" id="Bandera108">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na108"></div>
+                  <div class="at_details" id="NombreC108">
+                    <br /><sup id="Profesion108"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(109)" id="Elemento109">
+                <div class="element">
+                  <div class="masa" id="Masa109"></div>
+                  <div class="at_num" id="109"></div>
+                  <div class="estad" id="Bandera109">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na109"></div>
+                  <div class="at_details" id="NombreC109">
+                    <br /><sup id="Profesion109"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(110)" id="Elemento110">
+                <div class="element">
+                  <div class="masa" id="Masa110"></div>
+                  <div class="at_num" id="110"></div>
+                  <div class="estad" id="Bandera110">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na110"></div>
+                  <div class="at_details" id="NombreC110">
+                    <br /><sup id="Profesion110"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(111)" id="Elemento111">
+                <div class="element">
+                 <div class="masa" id="Masa111"></div>
+                  <div class="at_num" id="111"></div>
+                  <div class="estad" id="Bandera111">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na111"></div>
+                  <div class="at_details" id="NombreC111">
+                    <br /><sup id="Profesion111"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(112)" id="Elemento112">
+                <div class="element">
+                  <div class="masa" id="Masa112"></div>
+                  <div class="at_num" id="112"></div>
+                  <div class="estad" id="Bandera112">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na112"></div>
+                  <div class="at_details" id="NombreC112">
+                    <br /><sup id="Profesion112"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(113)" id="Elemento113">
+                <div class="element">
+                  <div class="masa" id="Masa113"></div>
+                  <div class="at_num" id="113"></div>
+                  <div class="estad" id="Bandera113">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na113"></div>
+                  <div class="at_details" id="NombreC113">
+                    <br /><sup id="Profesion113"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(114)" id="Elemento114">
+                <div class="element">
+                  <div class="masa" id="Masa114"></div>
+                  <div class="at_num" id="114"></div>
+                  <div class="estad" id="Bandera114">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na114"></div>
+                  <div class="at_details" id="NombreC114">
+                    <br /><sup id="Profesion114"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(115)" id="Elemento115">
+                <div class="element">
+                  <div class="masa" id="Masa115"></div>
+                  <div class="at_num" id="115"></div>
+                  <div class="estad" id="Bandera115">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na115"></div>
+                  <div class="at_details" id="NombreC115">
+                    <br /><sup id="Profesion115"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(116)" id="Elemento116">
+                <div class="element">
+                  <div class="masa" id="Masa116"></div>
+                  <div class="at_num" id="116"></div>
+                  <div class="estad" id="Bandera116">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na116"></div>
+                  <div class="at_details" id="NombreC116">
+                    <br /><sup id="Profesion116"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(117)" id="Elemento117">
+                <div class="element">
+                  <div class="masa" id="Masa117"></div>
+                  <div class="at_num" id="117"></div>
+                  <div class="estad" id="Bandera117">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na117"></div>
+                  <div class="at_details" id="NombreC117">
+                    <br /><sup id="Profesion117"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell" onclick = "generalData(118)" id="Elemento118">
+                <div class="element">
+                 <div class="masa" id="Masa118"></div>
+                  <div class="at_num" id="118"></div>
+                  <div class="estad" id="Bandera118">
+                    <li></li>
+                  </div>
+                  <div class="symbol" id="Na118"></div>
+                  <div class="at_details" id="NombreC118">
+                    <br /><sup id="Profesion118"></sup>
+                  </div>
+                </div>
+              </div>
+              <div class="cell empty"></div>
+            </div>
+            <div style="clear: both"></div>
+          </div></div>
+        <div class="contenido-gral-grid">
+          <div class="contenido">
+            <div class="tarjeta-contenido">
+              <div class="tarjeta-contenido-header">
+                <h2 id= "namaeCompleto">Nombre</h2>
+                <button id="datoI" onclick="dataRandom()">Dato Interesante random<span class="las la-question"></span></button>
+              </div>
+              <!--A partir de esta linea inicia el contenedor de la inofrmacion detallada 
+              mandamos a llamarlos desde el id y se identifican por un contador en JS-->
+              <div class="tarjeta-contenido-body">
+                <div class="table-responsive">
+                  <table width="100%">
+                    <thead>
+                      <tr>
+                        <td>Datos biograficos</td>
+                        <td>Logros</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td id = "bioData"></td>
+                        <td id = "rewards"></td>
+                        <td id = "img"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tarjetas-Navegacion">
+        <a href="https://youtu.be/knOrIBEqxYc?t=90">
+          <div class="tarjeta-gral">
+            <div>
+              <h1>PRESS ME!!!!!</h1>
+              <span class="las la-arrow-circle-right"></span
+              ><span>Bill Conti - "Going The Distance" & "The Final Bell"</span>
+            </div>
+            <div>
+              <span class="las la-drum"></span>
+            </div>
+          </div>
+        </div>
+        </a>
+        Todos los derechos reservados a el equipo UMIZOOMI | 4CM25 <span class="las la-copyright"></span>
+      </main>
+    </div>
+  </body>
+</html>
